@@ -68,7 +68,7 @@ const Navigation = ({ currentSlide, totalSlides, isPaused }) => {
         transition={{ delay: 2, duration: 1 }}
         className="text-center mt-2 text-xs text-medium-gray font-mono"
       >
-        ← → Space  |  1-8  |  P
+        ← → Space  |  1-7  |  P
       </motion.div>
     </div>
   );

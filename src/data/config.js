@@ -1,6 +1,6 @@
 // Presentation configuration
 export const SLIDE_CONFIG = {
-  totalSlides: 8,
+  totalSlides: 7,
   slideDurations: {
     0: 15000,  // Slide 1: Naslov/Uvod
     1: 15000,  // Slide 2: Pregled kompanije
@@ -33,10 +33,12 @@ export const PRODUCTS = {
     tagline: 'Upravljanje Transportom',
     color: '#1E88E5',
     features: [
-      { icon: 'FaBolt', text: 'Analitika Flote u Realnom Vremenu' },
-      { icon: 'FaMapMarkedAlt', text: 'Podsetnici' },
-      { icon: 'FaChartLine', text: 'Upravljanje troškovima voznog parka' },
       { icon: 'FaCloud', text: 'Cloud-baziran SaaS' },
+      { icon: 'FaChartBar', text: 'Analitika flote' },
+      { icon: 'FaChartLine', text: 'Upravljanje troškovima voznog parka' },
+      { icon: 'FaWrench', text: 'Održavanje vozila' },
+      { icon: 'FaCalendar', text: 'Podsetnici' },
+      { icon: 'FaClock', text: 'Evidencija radnog vremena vozača' },
     ],
   },
   tempTrack: {
@@ -46,6 +48,8 @@ export const PRODUCTS = {
     features: [
       { icon: 'FaBroadcastTower', text: 'LoRaWAN bežična tehnologija' },
       { icon: 'FaThermometerHalf', text: 'Praćenje temperatura u realnom vremenu' },
+      { icon: 'FaWifi', text: 'Bežični senzori' },
+      { icon: 'FaWrench', text: 'Izuzetno laka montaža' },
       { icon: 'FaChartBar', text: 'Analitika i izveštavanje' },
       { icon: 'FaMobileAlt', text: 'Mobilna aplikacija' },
     ],
@@ -54,7 +58,7 @@ export const PRODUCTS = {
     name: 'e-CMR Connect',
     tagline: 'Digitalna Transportna Dokumentacija',
     subtitle: 'Usklađeno. Digitalno. Transparentno.',
-    color: '#39FF14',
+    color: 'rgb(0 217 255 / var(--tw-text-opacity, 1))',
     features: [
       { icon: 'FaLock', title: 'eIDAS Usklađenost', desc: 'Pravno važeći digitalni potpisi' },
       { icon: 'FaEye', title: 'Vidljivost u Realnom Vremenu', desc: 'Praćenje pošiljki od početka do kraja' },

@@ -24,6 +24,10 @@ import {
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
+  FaWrench,
+  FaClock,
+    FaCalendar,
+    FaWifi
 } from 'react-icons/fa';
 
 export const iconMap = {
@@ -51,6 +55,10 @@ export const iconMap = {
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
+  FaWrench,
+  FaClock,
+    FaCalendar,
+    FaWifi,
 };
 
 // Helper function to get icon component by name

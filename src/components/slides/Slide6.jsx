@@ -87,6 +87,57 @@ const Slide6 = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* Sensor Images - Top Right */}
+      <div className="absolute top-6 right-8 z-20 flex items-endnow  gap-3">
+        {/* Browan Sensor */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8, duration: 0.6 }}
+        >
+          <img
+            src="/browan.jpg"
+            alt="Browan Tabs Temperature & Humidity Sensor"
+            className="w-36 h-auto object-contain"
+            style={{
+              filter: 'drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5))',
+            }}
+          />
+        </motion.div>
+
+        {/* Dragino Sensor */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.9, duration: 0.6 }}
+        >
+          <img
+            src="/dragino.png"
+            alt="Dragino Temperature & Humidity Sensor"
+            className="w-72 h-auto object-contain"
+            style={{
+              filter: 'drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5))',
+            }}
+          />
+        </motion.div>
+
+        {/* RAK Gateway */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.0, duration: 0.6 }}
+        >
+          <img
+            src="/RAK.png"
+            alt="RAK LoRaWAN Gateway"
+            className="w-72 h-auto object-contain"
+            style={{
+              filter: 'drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5))',
+            }}
+          />
+        </motion.div>
+      </div>
     </div>
   );
 };

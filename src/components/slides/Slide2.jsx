@@ -4,9 +4,12 @@ import { FaBolt, FaTrophy, FaRocket } from 'react-icons/fa';
 const Slide2 = () => {
   const keyPoints = [
     'Moderna .NET platforma',
-    'Microsoft tehnološki stek',
-    'Cloud, Internet of Things i AI pristupi',
-    'Kvalitet enterprise nivoa sa agilnošću startapa',
+    'Microsoft tehnologije',
+    'Intenzivna primena veštačke inteligencije',
+    'Pouzdana Azure Cloud infrastruktura',
+    'Internet of Things rešenja',
+    'Dugogodišnje iskustvo i prisutnost na tržištu',
+    'Stručni tim',
   ];
 
   const IconComponents = [FaBolt, FaTrophy, FaRocket];
