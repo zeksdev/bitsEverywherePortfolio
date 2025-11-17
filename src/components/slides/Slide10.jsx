@@ -62,7 +62,7 @@ const Slide10 = () => {
           className="font-heading font-bold text-clean-white mb-16"
           style={{ fontSize: '64px', letterSpacing: '-0.5px' }}
         >
-          Kontakt infromacije
+          Kontakt informacije
         </motion.h2>
 
         {/* Contact Grid */}

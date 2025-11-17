@@ -46,12 +46,12 @@ const Slide7 = () => {
         >
           {eCMR.name}
         </h2>
-        <p
+        {/*<p
           className="text-3xl font-heading mb-2"
           style={{ color: eCMR.color }}
         >
           {eCMR.tagline}
-        </p>
+        </p>*/}
         <p className="text-2xl italic text-electric-cyan">
           {eCMR.subtitle}
         </p>

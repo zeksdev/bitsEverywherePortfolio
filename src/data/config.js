@@ -2,14 +2,14 @@
 export const SLIDE_CONFIG = {
   totalSlides: 8,
   slideDurations: {
-    0: 10000,  // Slide 1: Naslov/Uvod
-    1: 10000,  // Slide 2: Pregled kompanije
-    2: 10000,  // Slide 5: myFleet
-    3: 10000,  // Slide 6: TempTrack
-    4: 10000,  // Slide 7: e-CMR Connect
-    5: 10000,  // Slide 8: Sertifikati
-    6: 10000,  // Slide 9: Tehnološki stack
-    7: 10000,  // Slide 10: Kontakt
+    0: 15000,  // Slide 1: Naslov/Uvod
+    1: 15000,  // Slide 2: Pregled kompanije
+    2: 15000,  // Slide 5: myFleet
+    3: 15000,  // Slide 6: TempTrack
+    4: 15000,  // Slide 7: e-CMR Connect
+    5: 15000,  // Slide 8: Sertifikati
+    6: 15000,  // Slide 9: Tehnološki stack
+    7: 15000,  // Slide 10: Kontakt
   },
   enableAutoAdvance: true,
   enableKeyboardControls: true,
@@ -45,7 +45,7 @@ export const PRODUCTS = {
     color: '#00BCD4',
     features: [
       { icon: 'FaBroadcastTower', text: 'LoRaWAN bežična tehnologija' },
-      { icon: 'FaThermometerHalf', text: 'Praćenje u realnom vremenu' },
+      { icon: 'FaThermometerHalf', text: 'Praćenje temperatura u realnom vremenu' },
       { icon: 'FaChartBar', text: 'Analitika i izveštavanje' },
       { icon: 'FaMobileAlt', text: 'Mobilna aplikacija' },
     ],
@@ -90,27 +90,27 @@ export const COMPETENCIES = [
 // Certifications
 export const CERTIFICATIONS = [
   {
-    title: 'Microsoft Sertifikovani Azure Developer Associate',
+    title: 'Microsoft Certified Azure Developer',
     subtitle: 'Ekspertski Azure cloud razvoj',
-    icon: 'FaCloud',
+    icon: '/microsoft-certified-azure-developer-associate.png',
     color: '#0066CC',
   },
   {
-    title: 'Microsoft Sertifikovani Azure IoT Developer',
+    title: 'Microsoft Certified Azure IoT Developer',
     subtitle: 'Specijalizovana IoT rešenja',
-    icon: 'FaNetworkWired',
+    icon: '/microsoft-certified-azure-iot-developer-specialty.png',
     color: '#39FF14',
   },
   {
-    title: 'Microsoft Sertifikovani Azure AI Engineer',
+    title: 'Microsoft Certified Azure AI Engineer',
     subtitle: 'Napredne AI implementacije',
-    icon: 'FaBrain',
+    icon: '/azure_ai_certificate.png',
     color: '#9C27B0',
   },
   {
-    title: 'Neo4j Developer Sertifikacija',
+    title: 'Neo4j Developer Certification',
     subtitle: 'Ekspertiza graph baza podataka',
-    icon: 'FaProjectDiagram',
+    icon: '/neo4j.png',
     color: '#3FB1CE',
   },
 ];

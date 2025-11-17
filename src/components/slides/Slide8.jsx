@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { CERTIFICATIONS } from '../../data/config';
-import { getIcon } from '../../utils/iconMap';
 
 const Slide8 = () => {
   return (
@@ -23,13 +22,12 @@ const Slide8 = () => {
         className="font-heading font-bold text-clean-white text-5xl mb-12 relative z-10"
         style={{ letterSpacing: '-0.3px' }}
       >
-        Sertifikovana Ekspertiza
+        Naši Sertifikati
       </motion.h2>
 
       {/* 2x2 Grid */}
       <div className="max-w-5xl w-full grid grid-cols-2 gap-8 relative z-10">
         {CERTIFICATIONS.map((cert, index) => {
-          const IconComponent = getIcon(cert.icon);
           return (
             <motion.div
               key={index}
@@ -54,7 +52,7 @@ const Slide8 = () => {
                 }}
               />
 
-              {/* Icon/Logo */}
+              {/* Certificate Image */}
               <motion.div
                 initial={{ scale: 0.5, rotate: -180 }}
                 animate={{ scale: 1, rotate: 0 }}
@@ -66,10 +64,11 @@ const Slide8 = () => {
                 }}
                 className="mb-4 relative z-10"
               >
-                <IconComponent
-                  className="text-7xl"
+                <img
+                  src={cert.icon}
+                  alt={cert.title}
+                  className="w-28 h-28 object-contain"
                   style={{
-                    color: cert.color,
                     filter: `drop-shadow(0 0 20px ${cert.color}40)`,
                   }}
                 />
