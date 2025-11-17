@@ -3,25 +3,35 @@ import { FaBolt, FaTrophy, FaRocket } from 'react-icons/fa';
 
 const Slide2 = () => {
   const keyPoints = [
-    '.NET ekspertiza sa AI automatizacijom',
-    'Microsoft-sertifikovani razvoj',
-    'Cloud, IoT i AI-potpomognuti pristupi',
+    'Moderna .NET platforma',
+    'Microsoft tehnološki stek',
+    'Cloud, Internet of Things i AI pristupi',
     'Kvalitet enterprise nivoa sa agilnošću startapa',
   ];
 
   const IconComponents = [FaBolt, FaTrophy, FaRocket];
 
   return (
-    <div className="w-full h-full bg-tech-navy flex items-center justify-center px-16">
-      <div className="max-w-7xl w-full grid grid-cols-5 gap-12 items-center">
+    <div
+      className="w-full h-full bg-tech-navy flex items-center justify-center px-16 relative overflow-hidden"
+      style={{
+        backgroundImage: 'url(/flyer.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black opacity-75 z-0" />
+      <div className="max-w-7xl w-full grid grid-cols-5 gap-12 items-center relative z-10">
         {/* Left: Text Content (40%) */}
         <div className="col-span-2 space-y-8">
           <motion.h2
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="font-heading font-bold text-clean-white text-5xl leading-tight"
-            style={{ letterSpacing: '-0.3px' }}
+            className="font-heading font-bold text-clean-white text-5xl"
+            style={{ letterSpacing: '-0.3px', whiteSpace: 'nowrap' }}
           >
             Inovativna Rešenja za Moderno Poslovanje
           </motion.h2>
@@ -47,33 +57,6 @@ const Slide2 = () => {
               </motion.div>
             ))}
           </motion.div>
-        </div>
-
-        {/* Right: Icons (60%) */}
-        <div className="col-span-3 flex flex-col items-center justify-center gap-12">
-          {IconComponents.map((Icon, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.5, rotate: -180 }}
-              animate={{ opacity: 1, scale: 1, rotate: 0 }}
-              transition={{
-                delay: 0.5 + index * 0.2,
-                duration: 0.8,
-                type: 'spring',
-                stiffness: 100,
-              }}
-              className="relative"
-            >
-              <Icon
-                className="text-8xl text-electric-cyan filter drop-shadow-2xl"
-                style={{
-                  filter: 'drop-shadow(0 0 40px rgba(0, 217, 255, 0.3))',
-                }}
-              />
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-electric-cyan opacity-10 rounded-full blur-2xl" />
-            </motion.div>
-          ))}
         </div>
       </div>
     </div>

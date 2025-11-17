@@ -4,20 +4,30 @@ import { getIcon } from '../../utils/iconMap';
 
 const Slide8 = () => {
   return (
-    <div className="w-full h-full bg-tech-navy flex flex-col items-center justify-center px-16 py-12">
+    <div
+      className="w-full h-full bg-tech-navy flex flex-col items-center justify-center px-16 py-12 relative overflow-hidden"
+      style={{
+        backgroundImage: 'url(/flyer.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black opacity-75 z-0" />
       {/* Headline */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="font-heading font-bold text-clean-white text-5xl mb-12"
+        className="font-heading font-bold text-clean-white text-5xl mb-12 relative z-10"
         style={{ letterSpacing: '-0.3px' }}
       >
         Sertifikovana Ekspertiza
       </motion.h2>
 
       {/* 2x2 Grid */}
-      <div className="max-w-5xl w-full grid grid-cols-2 gap-8">
+      <div className="max-w-5xl w-full grid grid-cols-2 gap-8 relative z-10">
         {CERTIFICATIONS.map((cert, index) => {
           const IconComponent = getIcon(cert.icon);
           return (

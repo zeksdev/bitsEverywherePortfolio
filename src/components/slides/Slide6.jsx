@@ -6,8 +6,18 @@ const Slide6 = () => {
   const { tempTrack } = PRODUCTS;
 
   return (
-    <div className="w-full h-full bg-tech-navy flex items-center justify-center px-16">
-      <div className="max-w-7xl w-full grid grid-cols-2 gap-12 items-center">
+    <div
+      className="w-full h-full bg-tech-navy flex items-center justify-center px-16 relative overflow-hidden"
+      style={{
+        backgroundImage: 'url(/flyer.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black opacity-75 z-0" />
+      <div className="max-w-7xl w-full grid grid-cols-2 gap-12 items-center relative z-10">
         {/* Left: Dashboard Mockup (55%) - MIRRORED */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -156,8 +166,8 @@ const Slide6 = () => {
 
           {/* Description */}
           <p className="text-light-gray text-xl leading-relaxed">
-            Napredni sistem za praćenje temperature zasnovan na LoRaWAN tehnologiji koji
-            pruža praćenje u realnom vremenu i analitiku za upravljanje hladnim lancem i usklađenost.
+            Internet of Things (IoT) rešenje za praćenje temperature i vlažnosti vazduha zasnovan na LoRaWAN tehnologiji koji
+            pruža praćenje u realnom vremenu i analitiku za upravljanje hladnim lancem.
           </p>
 
           {/* Features */}

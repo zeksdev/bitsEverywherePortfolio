@@ -4,7 +4,18 @@ import { HiCode } from 'react-icons/hi';
 
 const Slide1 = () => {
   return (
-    <div className="w-full h-full bg-tech-navy flex flex-col items-center justify-center relative overflow-hidden">
+    <div
+      className="w-full h-full bg-tech-navy flex flex-col items-center justify-center relative overflow-hidden"
+      style={{
+        backgroundImage: 'url(/flyer.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black opacity-75 z-0" />
+
       {/* Company Logo - Top Right */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -16,7 +27,7 @@ const Slide1 = () => {
       </motion.div>
 
       {/* Main Content */}
-      <div className="flex flex-col items-center justify-center space-y-8 z-10">
+      <div className="flex flex-col items-center justify-center space-y-8 z-10 mt-16">
         {/* Main Headline */}
         <motion.h1
           initial={{ opacity: 0, scale: 0.9 }}

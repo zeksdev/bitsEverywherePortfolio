@@ -6,14 +6,24 @@ const Slide7 = () => {
   const { eCMR } = PRODUCTS;
 
   return (
-    <div className="w-full h-full bg-tech-navy flex flex-col items-center justify-center px-16 py-12">
+    <div
+      className="w-full h-full bg-tech-navy flex flex-col items-center justify-center px-16 py-12 relative overflow-hidden"
+      style={{
+        backgroundImage: 'url(/flyer.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black opacity-75 z-0" />
       {/* Status Badge */}
       {eCMR.status && (
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="absolute top-12 px-6 py-2 rounded-full font-bold text-clean-white"
+          className="absolute top-12 px-6 py-2 rounded-full font-bold text-clean-white z-10"
           style={{
             backgroundColor: '#FF9800',
             boxShadow: '0 4px 20px rgba(255, 152, 0, 0.4)',
@@ -28,7 +38,7 @@ const Slide7 = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-center mb-12"
+        className="text-center mb-12 relative z-10"
       >
         <h2
           className="font-heading font-bold text-clean-white text-6xl mb-4"
@@ -48,7 +58,7 @@ const Slide7 = () => {
       </motion.div>
 
       {/* Four-Column Grid */}
-      <div className="max-w-6xl w-full grid grid-cols-4 gap-6">
+      <div className="max-w-6xl w-full grid grid-cols-4 gap-6 relative z-10">
         {eCMR.features.map((feature, index) => {
           const IconComponent = getIcon(feature.icon);
           return (

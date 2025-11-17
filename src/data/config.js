@@ -1,17 +1,15 @@
 // Presentation configuration
 export const SLIDE_CONFIG = {
-  totalSlides: 10,
+  totalSlides: 8,
   slideDurations: {
     0: 10000,  // Slide 1: Naslov/Uvod
     1: 10000,  // Slide 2: Pregled kompanije
-    2: 10000,  // Slide 3: Ključne kompetencije
-    3: 10000,  // Slide 4: AI-potpomognuti razvoj
-    4: 10000,  // Slide 5: myFleet
-    5: 10000,  // Slide 6: TempTrack
-    6: 10000,  // Slide 7: e-CMR Connect
-    7: 10000,  // Slide 8: Sertifikati
-    8: 10000,  // Slide 9: Tehnološki stack
-    9: 10000,  // Slide 10: Kontakt
+    2: 10000,  // Slide 5: myFleet
+    3: 10000,  // Slide 6: TempTrack
+    4: 10000,  // Slide 7: e-CMR Connect
+    5: 10000,  // Slide 8: Sertifikati
+    6: 10000,  // Slide 9: Tehnološki stack
+    7: 10000,  // Slide 10: Kontakt
   },
   enableAutoAdvance: true,
   enableKeyboardControls: true,
@@ -20,11 +18,11 @@ export const SLIDE_CONFIG = {
 // Company information
 export const COMPANY_INFO = {
   name: 'bitsEverywhere d.o.o',
-  tagline: 'Softverska rešenja za transport i logistiku',
+  tagline: 'Savremena softverska rešenja za transport i logistiku',
   technologies: ['.NET', 'Azure', 'IoT', 'AI'],
   phone: '+381 63 528 065',
   email: 'office@bitseverywhere.rs',
-  location: 'Preradovićeva 36, Petrovaradin, Srbija',
+  location: 'Laze Kostića 11-21000-Novi Sad-Srbija',
   website: 'https://bitseverywhere.com',
 };
 
@@ -43,13 +41,13 @@ export const PRODUCTS = {
   },
   tempTrack: {
     name: 'TempTrack',
-    tagline: 'Inteligencija Lanca Snabdevanja',
+    tagline: 'Monitoring temperature i vlažnosti vazduha u skladištima',
     color: '#00BCD4',
     features: [
-      { icon: 'FaBroadcastTower', text: 'LoRaWAN Bežična Tehnologija' },
-      { icon: 'FaThermometerHalf', text: 'Praćenje u Realnom Vremenu' },
-      { icon: 'FaChartBar', text: 'Cloud Analitika' },
-      { icon: 'FaMobileAlt', text: 'Mobilna Aplikacija' },
+      { icon: 'FaBroadcastTower', text: 'LoRaWAN bežična tehnologija' },
+      { icon: 'FaThermometerHalf', text: 'Praćenje u realnom vremenu' },
+      { icon: 'FaChartBar', text: 'Analitika i izveštavanje' },
+      { icon: 'FaMobileAlt', text: 'Mobilna aplikacija' },
     ],
   },
   eCMR: {

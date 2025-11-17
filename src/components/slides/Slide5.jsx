@@ -6,8 +6,18 @@ const Slide5 = () => {
   const { myFleet } = PRODUCTS;
 
   return (
-    <div className="w-full h-full bg-tech-navy flex items-center justify-center px-16">
-      <div className="max-w-7xl w-full grid grid-cols-2 gap-12 items-center">
+    <div
+      className="w-full h-full bg-tech-navy flex items-center justify-center px-16 relative overflow-hidden"
+      style={{
+        backgroundImage: 'url(/flyer.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black opacity-75 z-0" />
+      <div className="max-w-7xl w-full grid grid-cols-2 gap-12 items-center relative z-10">
         {/* Left: Text Content (45%) */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
