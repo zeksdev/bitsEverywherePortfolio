@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-tech-navy text-clean-white font-body;
+    margin: 0;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .slide-transition {
+    animation: slideTransition 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+
+  .fade-in-stagger {
+    animation: fadeIn 0.6s ease-in;
+  }
+
+  .fade-in-stagger:nth-child(1) { animation-delay: 0.1s; }
+  .fade-in-stagger:nth-child(2) { animation-delay: 0.2s; }
+  .fade-in-stagger:nth-child(3) { animation-delay: 0.3s; }
+  .fade-in-stagger:nth-child(4) { animation-delay: 0.4s; }
+  .fade-in-stagger:nth-child(5) { animation-delay: 0.5s; }
+  .fade-in-stagger:nth-child(6) { animation-delay: 0.6s; }
+
+  .gpu-accelerated {
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+
+  /* Fullscreen utility */
+  .fullscreen-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Aspect ratio 16:9 container */
+  .aspect-16-9 {
+    aspect-ratio: 16 / 9;
+  }
+}

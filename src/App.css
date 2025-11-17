@@ -1,0 +1,8 @@
+/* App-specific styles (Tailwind handles most styling) */
+
+/* Ensure fullscreen and no overflow */
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
